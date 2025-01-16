@@ -24,13 +24,13 @@ A minimalistic Node.js data validation library that provides a collection of rul
 To install Tiny Validation in your project, run the following command:
 
 ```bash
-npm install tiny-validation
+npm install tinyvalidation
 ```
 
 Alternatively, if you are using Yarn:
 
 ```bash
-yarn add tiny-validation
+yarn add tinyvalidation
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ Here's how you can get started using Tiny Validation.
 
 ### Example
 ```javascript
-const TinyValidation = require('tiny-validation');
+const TinyValidation = require('tinyvalidation');
 const Validator = TinyValidation.Validator;
 
 const userInput = {
