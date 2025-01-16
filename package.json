@@ -1,5 +1,5 @@
 {
-  "name": "tinyvalidation",
+  "name": "tiny-validation",
   "version": "1.0.0",
   "description": "Tiny Validation is a lightweight, chainable input validation library for Node.js. Validate strings, numbers, emails, and more with ease. Example: validate(input).isEmail().isNotEmpty(). No dependencies, simple API, and perfect for quick validation needs without the bloat. Stay minimal, stay efficient!",
   "main": "src/index.js",
@@ -10,9 +10,22 @@
     "type": "git",
     "url": "git+https://github.com/nodebysam/tinyvalidation.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "validation",
+    "nodejs",
+    "input-validation",
+    "simple-validation",
+    "minimal",
+    "validator",
+    "email-validation",
+    "password-validation",
+    "url-validation",
+    "strong-password",
+    "number-validation",
+    "regex-validation"
+  ],
+  "author": "Sam Wilcox <wilcox.sam@gmail.com>",
+  "license": "GPL-3.0-only",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/nodebysam/tinyvalidation/issues"
@@ -20,5 +33,16 @@
   "homepage": "https://github.com/nodebysam/tinyvalidation#readme",
   "devDependencies": {
     "ava": "^6.2.0"
-  }
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "preferGlobal": false,
+  "files": [
+    "src"
+  ],
+  "contributors": [
+    "Sam Wilcox <wilcox.sam@gmail.com>"
+  ]
 }

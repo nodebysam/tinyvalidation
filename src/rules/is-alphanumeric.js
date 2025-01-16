@@ -14,10 +14,12 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True is alphanumeric, false if not alphanumeric.
  */
-module.exports = (value) => {
+const isAlphanumeric = (value) => {
     if (typeof value !== 'string') {
         return false;
     }
-    
+
     return /^[A-Za-z0-9]+$/.test(value);
 };
+
+module.exports = isAlphanumeric;

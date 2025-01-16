@@ -22,7 +22,7 @@
  * @param {boolean} [thresholds.exceedEach=false] - True to exceed all thesholds, false to just exceed one single threshold (default: false).
  * @returns {boolean} True if the value is HOT, false it NOT HOT.
  */
-module.exports = (value, thresholds = []) => {
+const isHot = (value, thresholds = []) => {
     const {
         map = [50],
         meet = false,
@@ -62,3 +62,5 @@ module.exports = (value, thresholds = []) => {
     // If neither meet nor exceed is true, return false
     return false;
 };
+
+module.exports = isHot;

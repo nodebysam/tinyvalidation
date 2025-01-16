@@ -15,7 +15,7 @@
  * @param {number} expectedLength - The expected length.
  * @returns {boolean} True if length is the given length, false if not.
  */
-module.exports = (value, expectedLength) => {
+const isLength = (value, expectedLength) => {
     if (value == null) {
         return false;
     }
@@ -26,3 +26,5 @@ module.exports = (value, expectedLength) => {
 
     return value.length === expectedLength;
 };
+
+module.exports = isLength;

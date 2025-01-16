@@ -14,4 +14,6 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True is a valid Integer, false if not.
  */
-module.exports = (value) => Number.isInteger(value);
+const isInteger = (value) => Number.isInteger(value);
+
+module.exports = isInteger;

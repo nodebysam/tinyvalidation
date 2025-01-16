@@ -14,4 +14,6 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True if a valid string, false if not a valid string.
  */
-module.exports = (value) => typeof value === 'string';
+const isString = (value) => typeof value === 'string';
+
+module.exports = isString;

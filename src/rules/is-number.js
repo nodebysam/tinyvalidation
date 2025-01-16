@@ -15,7 +15,7 @@
  * @param {boolean} [allowString=false] - True to allow numeric strings (e.g., "123"), false to only allow numeric type.
  * @returns {boolean} True if a valid number, false if not. 
  */
-module.exports = (value, allowString = false) => {
+const isNumber = (value, allowString = false) => {
     if (typeof value === 'number' && !isNaN(value)) {
         return true;
     }
@@ -35,3 +35,5 @@ module.exports = (value, allowString = false) => {
 
     return false;
 };
+
+module.exports = isNumber;

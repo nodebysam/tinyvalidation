@@ -14,4 +14,6 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True if positive, false if negative.
  */
-module.exports = (value) => typeof value === 'number' && isFinite(value) && value > 0;
+const isPositive = (value) => typeof value === 'number' && isFinite(value) && value > 0;
+
+module.exports = isPositive;

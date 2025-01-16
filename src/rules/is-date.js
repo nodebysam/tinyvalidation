@@ -14,4 +14,6 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True if a Date object, false if not.
  */
-module.exports = (value) => value instanceof Date && !isNaN(value);
+const isDate = (value) => value instanceof Date && !isNaN(value);
+
+module.exports = isDate;

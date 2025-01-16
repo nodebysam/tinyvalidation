@@ -15,7 +15,7 @@
  * @param {boolean} [treatZeroAsEmpty=false] - True to treat '0' as empty, false to not treat '0' as empty.
  * @returns {boolean} True if the value is not empty, false if empty.
  */
-module.exports = (value, treatZeroAsEmpty = false) => {
+const isNotEmpty = (value, treatZeroAsEmpty = false) => {
     if (value === null || value === undefined) {
         return false;
     }
@@ -38,3 +38,5 @@ module.exports = (value, treatZeroAsEmpty = false) => {
 
     return true;
 };
+
+module.exports = isNotEmpty;

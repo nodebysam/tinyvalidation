@@ -14,10 +14,12 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True if a phone number, false if not.
  */
-module.exports = (value) => {
+const isPhoneNumber = (value) => {
     if (typeof value !== 'string') return false;
 
     // Regex for validating phone numbers with a leading plus sign and a minimum of 4 digits
     const phoneRegex = /^\+([1-9]{1}[0-9]{4,14})$/;
     return phoneRegex.test(value);
 };
+
+module.exports = isPhoneNumber;

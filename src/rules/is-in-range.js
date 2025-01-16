@@ -17,7 +17,7 @@
  * @param {number} [max=undefined] - The maximum number for the range.
  * @returns {boolean} True if is in range, false if not in range.
  */
-module.exports = (value, min = undefined, max = undefined) => {
+const isInRange = (value, min = undefined, max = undefined) => {
     if (typeof value !== 'number') {
         return false;
     }
@@ -33,3 +33,5 @@ module.exports = (value, min = undefined, max = undefined) => {
 
     return value >= min && value <= max;
 };
+
+module.exports = isInRange;

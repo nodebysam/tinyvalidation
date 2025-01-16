@@ -31,6 +31,27 @@ const isPhoneNumber = require('./is-phone-number');
 const isAfterDate = require('./is-after-date');
 const isBeforeDate = require('./is-before-date');
 const isValidJSON = require('./is-valid-json');
+const isFibonacci = require('./is-fibonacci');
+const isLucky = require('./is-lucky');
+const isAddress = require('./is-address');
+const isFloat = require('./is-float');
+const isError = require('./is-error');
+const isIn = require('./is-in');
+const isNotIn = require('./is-not-in');
+const isMinLength = require('./is-min-length');
+const isMaxLength = require('./is-max-length');
+const isInstanceOf = require('./is-instance-of');
+const isStrictEqual = require('./is-strict-equal');
+const isNotEqual = require('./is-not-equal');
+const isNotStrictEqual = require('./is-not-strict-equal');
+const isFilePath = require('./is-file-path');
+const isIpAddress = require('./is-ip-address');
+const isDomainName = require('./is-domain-name');
+const isCurrency = require('./is-currency');
+const isStrongPassword = require('./is-strong-password');
+const isMediaUrl = require('./is-media-url');
+const hasNumber = require('./has-number');
+const hasSpecialCharacter = require('./has-special-character');
 
 module.exports = {
     isEmail,
@@ -56,4 +77,25 @@ module.exports = {
     isAfterDate,
     isBeforeDate,
     isValidJSON,
+    isFibonacci,
+    isLucky,
+    isAddress,
+    isFloat,
+    isError,
+    isIn,
+    isNotIn,
+    isMinLength,
+    isMaxLength,
+    isInstanceOf,
+    isStrictEqual,
+    isNotEqual,
+    isNotStrictEqual,
+    isFilePath,
+    isIpAddress,
+    isDomainName,
+    isCurrency,
+    isStrongPassword,
+    isMediaUrl,
+    hasNumber,
+    hasSpecialCharacter,
 };

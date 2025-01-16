@@ -14,7 +14,9 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True if is an UUID, false if is not UUID.
  */
-module.exports = (value) => {
+const isUUID = (value) => {
     const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
     return uuidRegex.test(value);
 };
+
+module.exports = isUUID;

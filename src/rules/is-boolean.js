@@ -15,7 +15,7 @@
  * @param {boolean} [allowString=false] - True to allow booleans as a string (e.g., "true", "false"), false not to.
  * @returns {boolean} True if a valid boolean value, false if not.
  */
-module.exports = (value, allowString = false) => {
+const isBoolean = (value, allowString = false) => {
     if (typeof value === 'boolean') {
         return true;
     }
@@ -26,3 +26,5 @@ module.exports = (value, allowString = false) => {
 
     return false;
 };
+
+module.exports = isBoolean;

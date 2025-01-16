@@ -14,7 +14,7 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True if valid JSON, false if invalid JSON.
  */
-module.exports = (value) => {
+const isValidJSON = (value) => {
     if (typeof value !== 'string') {
         return false;
     }
@@ -26,3 +26,5 @@ module.exports = (value) => {
         return false;
     }
 };
+
+module.exports = isValidJSON;

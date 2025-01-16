@@ -15,4 +15,6 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True if value is an array, false if it is not.
  */
-module.exports = (value) => Array.isArray(value);
+const isArray = (value) => Array.isArray(value);
+
+module.exports = isArray;

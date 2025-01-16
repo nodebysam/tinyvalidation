@@ -14,4 +14,6 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True if alpha, false is not alpha.
  */
-module.exports = (value) => /^[A-Za-z]+$/.test(value);
+const isAlpha = (value) => /^[A-Za-z]+$/.test(value);
+
+module.exports = isAlpha;

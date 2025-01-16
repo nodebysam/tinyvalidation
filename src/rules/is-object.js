@@ -15,7 +15,7 @@
  * @param {boolean} [allowSpecialObjects=false] - True to allow special objects (e.g., Date, RegEx, etc), false for only simple objects.
  * @returns {boolean} True if a valid object, false otherwise.
  */
-module.exports = (value, allowSpecialObjects = false) => {
+const isObject = (value, allowSpecialObjects = false) => {
     if (value === null || value === undefined || Array.isArray(value) || typeof value !== 'object') {
         return false;
     }
@@ -28,3 +28,5 @@ module.exports = (value, allowSpecialObjects = false) => {
 
     return Object.getPrototypeOf(value) === null || Object.getPrototypeOf(value) === Object.prototype;
 };
+
+module.exports = isObject;

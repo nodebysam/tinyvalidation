@@ -14,7 +14,9 @@
  * @param {any} value - The value to validate.
  * @returns {boolean} True if an URL, false if not an URL.
  */
-module.exports = (value) => {
+const isUrl = (value) => {
     const urlRegex = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}(:\d+)?(\/[^\s]*)?$/;
     return urlRegex.test(value);
 };
+
+module.exports = isUrl;

@@ -15,4 +15,6 @@
  * @param {Date} comparisonDate - The comparison Date object.
  * @returns {boolean} True if value is before comparsion date, false if not.
  */
-module.exports = (value, comparisonDate) => value instanceof Date && comparisonDate instanceof Date && value < comparisonDate;
+const isBeforeDate = (value, comparisonDate) => value instanceof Date && comparisonDate instanceof Date && value < comparisonDate;
+
+module.exports = isBeforeDate;
