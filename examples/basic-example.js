@@ -15,7 +15,7 @@
 
 // Require the library in your code.
 // If your code, it should look like this:
-// const TinyValidation = require('tiny-validation');
+// const TinyValidation = require('@nodebysam/tiny-validation');
 
 // For this example, I just point to the main index.
 const TinyValidation = require('../src/index');
